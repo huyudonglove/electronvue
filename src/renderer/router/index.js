@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import aa from '../components/aa.vue'
-
 Vue.use(Router)
 const originalPush = Router.prototype.push
 Router.prototype.push = function push (location) {
@@ -12,8 +11,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'landing-page',
-      component: require('@/components/LandingPage').default,
+      name: 'home',
+      component: require('../components/home').default,
       children:[
         {
           path:'/aa',

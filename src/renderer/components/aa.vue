@@ -1,7 +1,7 @@
 <template>
     <div>
        222222222
-       <button @click="readF">123</button>
+       <button @click="$router.push('/')">123</button>
     </div>
 </template>
 <script>
